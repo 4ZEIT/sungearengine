@@ -1,0 +1,66 @@
+
+html {
+  height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefdfb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  main {
+    flex: 1;
+  }
+  
+  .company-logo, .engine-logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .section-title {
+    color: #d68628; /* оттенок от оранжевого из логотипа */
+    border-bottom: 2px solid #d68628;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-title {
+    color: #4d652c; /* зелёный из логотипа */
+  }
+  
+  .card {
+    border: none;
+    background-color: #fff;
+    border-left: 4px solid #4d652c;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  footer {
+    font-size: 0.9rem;
+    background-color: #fbf9f4;
+    color: #555;
+  }
+  
+  header h1 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  @media (max-width: 576px) {
+    .company-logo, .engine-logo {
+      height: 40px;
+    }
+  
+    header h1 {
+      font-size: 1.25rem;
+    }
+  }
+  
